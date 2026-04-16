@@ -8,5 +8,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80          # Service ka port
-      targetPort: 80     # Container ka port
+      targetPort: 5000    # Container ka port
   type: ClusterIP       # ArgoCD ke liye ClusterIP kaafi hai agar Ingress use kar rahe ho
