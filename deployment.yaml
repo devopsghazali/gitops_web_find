@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-pro-app
+  labels:
+    app: my-pro-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-pro-app
+  template:
+    metadata:
+      labels:
+        app: my-pro-app
+    spec:
+      containers:
+      - name: my-pro-app
+        # Jenkins isi niche wali line ko 'sed' se v1 se v2 karega
+        image: your-dockerhub-username/my-pro-app:v1
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
