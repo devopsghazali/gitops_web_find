@@ -17,7 +17,7 @@ spec:
       containers:
       - name: my-pro-app
         # Jenkins isi niche wali line ko 'sed' se v1 se v2 karega
-        image: your-dockerhub-username/my-pro-app:v1
+        image: devopsghazali/websites_finding:v1
         ports:
         - containerPort: 80
         resources:
