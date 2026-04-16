@@ -19,7 +19,7 @@ spec:
         # Jenkins isi niche wali line ko 'sed' se v1 se v2 karega
         image: devopsghazali/websites_finding:v1
         ports:
-        - containerPort: 80
+        - containerPort: 5000
         resources:
           limits:
             memory: "256Mi"
